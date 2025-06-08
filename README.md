@@ -50,9 +50,15 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 
 ## 📊 Data Visualization
 
-- **Histogram** of sequence lengths (original vs cleaned text)
+- **Histogram:** Distribution of sequence lengths comparing original and cleaned texts, illustrating the impact of preprocessing on text length.
 
-- **Word Clouds:** Visual representations of high-frequency words for each emotion class to highlight key terms.
+<div align="center">
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Histogram_Sequence_Lengths.png" alt="Histogram of Sequence Lengths" width="600"/>
+</div>
+
+---
+
+- **Word Clouds:** Visual representations of high-frequency words for each emotion class, highlighting key terms associated with each emotion.
 
 <div align="center">
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png" alt="Word Cloud Visualization" width="600"/>
@@ -60,13 +66,19 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 
 ---
 
-- **WordClouds** for each class to visualize high-frequency terms
- ![Word_Cloud Visualization](https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png)
- 
-- **Bar chart** and **Pie chart** to visualize class distribution  
-  > Dataset is imbalanced with joy and sadness dominating
+- **Bar Chart** and **Pie Chart:** Visualize the distribution of samples across the six emotion classes.  
+> Note: The dataset is imbalanced, with `joy` and `sadness` classes dominating the sample count.
+
+<div align="center">
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Bar_Chart_Class_Distribution.png" alt="Bar Chart of Class Distribution" width="600"/>
+</div>
+
+<div align="center">
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Pie_Chart_Class_Distribution.png" alt="Pie Chart of Class Distribution" width="600"/>
+</div>
 
 ---
+
 
 ## 🧪 Dataset Split & Padding
 
