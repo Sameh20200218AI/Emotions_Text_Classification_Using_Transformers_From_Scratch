@@ -139,7 +139,7 @@ Validation Accuracy: 89.16%
 - Generated a **Classification Report**  
 - Plotted **Confusion Matrix** using Seaborn heatmap
   <div align="center">
-  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Sequence_Length_Distribution.png" alt="Histogram of Sequence Lengths" width="800"/>
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Confusion_Matrix.png" alt="Histogram of Sequence Lengths" width="800"/>
 </div>
 
 - Evaluated with **custom input examples**  
