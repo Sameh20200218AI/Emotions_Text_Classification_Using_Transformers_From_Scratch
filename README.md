@@ -1,19 +1,22 @@
-# Emotion Text Classification using Transformers (Built from Scratch)
 
-This project focuses on building a robust **Emotion Text Classifier** using a Transformer model implemented **from scratch**. The goal is to classify text data into one of six emotional categories: `sadness`, `joy`, `love`, `anger`, `fear`, and `surprise`.
+# 🎭 Emotion Text Classification using Transformers (Built from Scratch)
+
+This project focuses on building a robust **Emotion Text Classifier** using a **Transformer architecture implemented entirely from scratch**. The goal is to classify input text into one of six emotional categories:
+
+> `sadness`, `joy`, `love`, `anger`, `fear`, and `surprise`
 
 ---
 
-## 📚 Libraries Used
+## 📚 Libraries & Tools Used
 
-- `TensorFlow`, `Keras` – Deep Learning and model building  
-- `scikit-learn` – Data preprocessing and evaluation  
-- `Pandas`, `NumPy` – Data handling  
-- `Seaborn`, `Matplotlib` – Visualization  
-- `WordCloud` – Word cloud visualization  
-- `spaCy` – Text normalization and tokenization  
-- `emoji` – Emoji handling  
-- `Gradio` – Model deployment with GUI
+- **TensorFlow**, **Keras** – Deep Learning model construction  
+- **scikit-learn** – Data preprocessing, train/test splitting, evaluation metrics  
+- **Pandas**, **NumPy** – Data manipulation and analysis  
+- **Seaborn**, **Matplotlib** – Visualizations  
+- **WordCloud** – Generating word clouds for each emotion  
+- **spaCy** – Text cleaning, tokenization, and lemmatization  
+- **emoji** – Emoji detection and removal  
+- **Gradio** – Web-based GUI for model interaction and deployment  
 
 ---
 
@@ -24,110 +27,148 @@ This project focuses on building a robust **Emotion Text Classifier** using a Tr
 - **Classes:** 6  
   ```python
   class_names = ['sadness', 'joy', 'love', 'anger', 'fear', 'surprise']
+  ```
 
-✅ Preprocessing Steps
-Loaded the dataset using Pandas.
+---
 
-Used a pre-trained NLP model to clean and tokenize text:
+## 🧼 Text Preprocessing
 
-Normalized text
+- Loaded using **Pandas**
+- Text cleaned and tokenized using a pre-trained **spaCy** model
+- Preprocessing pipeline includes:
+  - Text normalization (lemmatization)
+  - Removing:
+    - Emojis
+    - HTML tags
+    - Stop words
+    - Special characters  
+  - Preserving negation words
+- Added a new column with the cleaned version of the text
 
-Removed emojis, tags, stop words, and special characters
+---
 
-Preserved negation words
+## 📊 Data Visualization
 
-Created a new column for cleaned text.
+- **Histogram** of sequence lengths (original vs cleaned text)  
+- **WordClouds** for each class to visualize high-frequency terms  
+- **Bar chart** and **Pie chart** to visualize class distribution  
+  > Dataset is imbalanced with joy and sadness dominating
 
-📊 Data Visualization
-Histogram of sequence lengths (original vs preprocessed text)
+---
 
-WordClouds for each emotion class
+## 🧪 Dataset Split & Padding
 
-Bar and Pie Charts showing class distribution
+- **Training Set:** 90%  
+- **Testing Set:** 10%  
+  > Due to large sample size, this split was efficient and optimal.
 
-🧪 Train-Test Split
-Train: 90%
+- All text samples were padded to match the **maximum sequence length (69 tokens)**
 
-Test: 10%
+```text
+Training shape: (375,128, 69)  
+Testing shape: (41,681, 69)
+```
 
-Due to the large dataset size, this split is efficient.
+---
 
-All samples padded to the max sequence length (69 tokens)
+## 🧠 Transformer Architecture (Implemented from Scratch)
 
-text
-Copy
-Edit
-Training shape: (375128, 69)  
-Testing shape: (41681, 69)
-🧠 Transformer Model (From Scratch)
-Implemented the following from scratch:
+### ✅ Components:
+- `TokenAndPositionEmbedding` class  
+- `TransformerEncoder` class
 
-TokenAndPositionEmbedding class
+### 🔧 Model Architecture:
 
-TransformerEncoder class
+| Parameter        | Value      |
+|------------------|------------|
+| `embed_dim`      | 100        |
+| `num_heads`      | 8          |
+| `feedforward_dim`| 64         |
 
-🔧 Model Architecture
-embed_dim: 100
+- Early stopping used on `val_loss` with patience of 3 epochs  
+- Best weights saved during training  
 
-num_heads: 8
+---
 
-feedforward_dim: 64
+## 🏋️ Training Configuration
 
-Early stopping: Monitor val_loss, stop after 3 non-improving epochs
+| Setting              | Value   |
+|----------------------|---------|
+| Epochs               | 20      |
+| Batch Size           | 1024    |
+| Validation Split     | 15%     |
+| Early Stopping       | ✅      |
+| Stopped At           | Epoch 5 |
 
-Best model weights saved
-
-🏋️ Training Parameters
-Epochs: 20
-
-Batch size: 1024
-
-Validation split: 15%
-
-Training stopped at Epoch 5
-
-text
-Copy
-Edit
+```text
 Training Accuracy: 91.89%  
 Validation Accuracy: 89.16%
-📈 Evaluation
-Test Accuracy: 90.36%
+```
 
-Test Loss: 0.2006
+---
 
-Printed classification report and plotted confusion matrix
+## 📈 Evaluation Results
 
-Tested custom input examples – model performed very well.
+| Metric         | Value     |
+|----------------|-----------|
+| Test Accuracy  | 90.36%    |
+| Test Loss      | 0.2006    |
 
-Despite class imbalance, the model achieved:
+- Generated a **Classification Report**  
+- Plotted **Confusion Matrix** using Seaborn heatmap  
+- Evaluated with **custom input examples**  
+- Model generalizes well and handles unseen text confidently
 
-~91% Accuracy
+✅ Despite class imbalance:
+- Achieved ~91% accuracy  
+- Strong F1-score across all categories  
 
-Strong F1 Scores
+---
 
-🚀 Model Deployment
-Used Gradio to build an interactive UI for emotion classification.
+## 🚀 Deployment using Gradio
 
-Features:
-Load and preprocess user input
+An interactive UI was built with **Gradio** for real-time emotion prediction.
 
-Predict emotion class with associated emoji 😊😢😡 etc.
+### Features:
+- Clean and preprocess user input
+- Predict emotion category with emoji output 😊😢😡😨
+- Display confidence scores for **all 6 classes**
 
-Display confidence scores for all classes
+> Model is fully functional and reusable for production or further fine-tuning.
 
-💾 Model Saved
-Final trained model is saved and reusable for deployment or further training.
+---
 
-📌 Conclusion
-This project successfully built a powerful and interpretable Transformer-based Emotion Classifier from scratch, delivering excellent results on a large and imbalanced dataset. The interactive Gradio app adds real-world usability for end users.
+## 💾 Model Persistence
 
-🔗 Future Improvements
-Handle multi-label emotions
+- Final trained model and tokenizer are **saved locally**
+- Can be reloaded for further training, batch inference, or deployment  
 
-Expand to multilingual datasets
+---
 
-Fine-tune pretrained Transformers like BERT for comparison
+## 📌 Conclusion
 
-👨‍💻 Author
-Sameh Raouf
+This project demonstrates how a **Transformer-based Emotion Classifier** can be built from the ground up and deliver **excellent results** on a large, imbalanced dataset. With preprocessing, visualization, training, evaluation, and deployment all integrated, this project stands as a **complete end-to-end NLP system**.
+
+---
+
+## 🚧 Future Improvements
+
+- Extend to **multi-label emotion detection**
+- Apply to **multilingual** emotion classification datasets
+- Compare with fine-tuned **pretrained Transformers** (e.g. BERT, RoBERTa)
+- Perform **ablation studies** on architecture components
+
+---
+
+## 👨‍💻 Author
+
+**Sameh Raouf**  
+🎓 AI Engineer  
+🔗 [Kaggle Projects](https://www.kaggle.com/code/samehraouf)  
+🔗 [GitHub Profile](https://github.com/Sameh20200218AI)
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
