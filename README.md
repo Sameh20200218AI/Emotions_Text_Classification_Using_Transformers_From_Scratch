@@ -1,8 +1,6 @@
 
 # 🎭 Emotion Text Classification using Transformers (Built from Scratch)
 
-![Word_Cloud Visualization](https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png)
-
 
 This project focuses on building a robust **Emotion Text Classifier** using a **Transformer architecture implemented entirely from scratch**. The goal is to classify input text into one of six emotional categories:
 
@@ -53,7 +51,9 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 ## 📊 Data Visualization
 
 - **Histogram** of sequence lengths (original vs cleaned text)  
-- **WordClouds** for each class to visualize high-frequency terms  
+- **WordClouds** for each class to visualize high-frequency terms
+- ![Word_Cloud Visualization](https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png)
+ 
 - **Bar chart** and **Pie chart** to visualize class distribution  
   > Dataset is imbalanced with joy and sadness dominating
 
