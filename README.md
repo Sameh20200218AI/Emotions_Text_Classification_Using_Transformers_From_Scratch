@@ -50,7 +50,16 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 
 ## 📊 Data Visualization
 
-- **Histogram** of sequence lengths (original vs cleaned text)  
+- **Histogram** of sequence lengths (original vs cleaned text)
+
+- **Word Clouds:** Visual representations of high-frequency words for each emotion class to highlight key terms.
+
+<div align="center">
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png" alt="Word Cloud Visualization" width="600"/>
+</div>
+
+---
+
 - **WordClouds** for each class to visualize high-frequency terms
  ![Word_Cloud Visualization](https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png)
  
