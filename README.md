@@ -53,7 +53,7 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 - **Histogram:** Distribution of sequence lengths comparing original and cleaned texts, illustrating the impact of preprocessing on text length.
 
 <div align="center">
-  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Histogram_Sequence_Lengths.png" alt="Histogram of Sequence Lengths" width="600"/>
+  <img src="[equence_Lengths.png](https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Sequence_Length_Distribution.png)" alt="Histogram of Sequence Lengths" width="600"/>
 </div>
 
 ---
