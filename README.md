@@ -53,14 +53,14 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 - **Histogram:** Distribution of sequence lengths comparing original and cleaned texts, illustrating the impact of preprocessing on text length.
 
 <div align="center">
-  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Sequence_Length_Distribution.png" alt="Histogram of Sequence Lengths" width="600"/>
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Sequence_Length_Distribution.png" alt="Histogram of Sequence Lengths" width="800"/>
 </div>
 
-
+---
 - **Word Clouds:** Visual representations of high-frequency words for each emotion class, highlighting key terms associated with each emotion.
 
 <div align="center">
-  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png" alt="Word Cloud Visualization" width="600"/>
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png" alt="Word Cloud Visualization" width="800"/>
 </div>
 
 ---
@@ -69,11 +69,7 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 > Note: The dataset is imbalanced, with `joy` and `sadness` classes dominating the sample count.
 
 <div align="center">
-  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Bar_Chart_Class_Distribution.png" alt="Bar Chart of Class Distribution" width="600"/>
-</div>
-
-<div align="center">
-  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Pie_Chart_Class_Distribution.png" alt="Pie Chart of Class Distribution" width="600"/>
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Count_Number_of_Samples.png" alt="Bar Chart of Class Distribution" width="800"/>
 </div>
 
 ---
