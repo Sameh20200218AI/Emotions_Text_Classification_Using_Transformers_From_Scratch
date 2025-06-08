@@ -209,6 +209,5 @@ This project demonstrates how a **Transformer-based Emotion Classifier** can be 
 ## 👨‍💻 Author
 
 **Sameh Raouf**  
-🎓 AI Engineer  
----
+
 
