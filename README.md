@@ -56,14 +56,14 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Sequence_Length_Distribution.png" alt="Histogram of Sequence Lengths" width="800"/>
 </div>
 
----
+
 - **Word Clouds:** Visual representations of high-frequency words for each emotion class, highlighting key terms associated with each emotion.
 
 <div align="center">
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Word_Cloude_All_Classes.png" alt="Word Cloud Visualization" width="800"/>
 </div>
 
----
+
 
 - **Bar Chart** and **Pie Chart:** Visualize the distribution of samples across the six emotion classes.  
 > Note: The dataset is imbalanced, with `joy` and `sadness` classes dominating the sample count.
@@ -72,7 +72,6 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Count_Number_of_Samples.png" alt="Bar Chart of Class Distribution" width="800"/>
 </div>
 
----
 
 
 ## 🧪 Dataset Split & Padding
