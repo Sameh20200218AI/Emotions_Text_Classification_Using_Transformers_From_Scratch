@@ -164,11 +164,5 @@ This project demonstrates how a **Transformer-based Emotion Classifier** can be 
 
 **Sameh Raouf**  
 🎓 AI Engineer  
-🔗 [Kaggle Projects](https://www.kaggle.com/code/samehraouf)  
-🔗 [GitHub Profile](https://github.com/Sameh20200218AI)
-
 ---
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
