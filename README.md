@@ -84,8 +84,8 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
 - All text samples were padded to match the **maximum sequence length (69 tokens)**
 
 ```text
-Training shape: (375,128, 69)  
-Testing shape: (41,681, 69)
+Training shape: (375128, 69)  
+Testing shape: (41681, 69)
 ```
 
 ---
