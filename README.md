@@ -158,18 +158,21 @@ An interactive UI was built with **Gradio** for real-time emotion prediction.
   <div align="center">
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Love_Label.png" alt="Histogram of Sequence Lengths" width="700"/>
 </div>
----
+
   <div align="center">
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Anger_Label.png" alt="Histogram of Sequence Lengths" width="700"/>
 </div>
----
+
   <div align="center">
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Joy_Label.png" alt="Histogram of Sequence Lengths" width="700"/>
 </div>
----
+
   <div align="center">
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Sadness_Label.png" alt="Histogram of Sequence Lengths" width="700"/>
 </div>
+
+---
+
 
 
 ### Features:
