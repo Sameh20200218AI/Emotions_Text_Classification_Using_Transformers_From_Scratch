@@ -72,6 +72,7 @@ This project focuses on building a robust **Emotion Text Classifier** using a **
   <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Count_Number_of_Samples.png" alt="Bar Chart of Class Distribution" width="800"/>
 </div>
 
+---
 
 
 ## 🧪 Dataset Split & Padding
