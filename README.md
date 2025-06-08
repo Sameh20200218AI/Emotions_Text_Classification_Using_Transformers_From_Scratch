@@ -123,7 +123,10 @@ Testing shape: (41,681, 69)
 Training Accuracy: 91.89%  
 Validation Accuracy: 89.16%
 ```
-
+---
+<div align="center">
+  <img src="https://github.com/Sameh20200218AI/Emotions_Text_Classification_Using_Transformers_From_Scratch/blob/main/Sequence_Length_Distribution.png" alt="Histogram of Sequence Lengths" width="800"/>
+</div>
 ---
 
 ## 📈 Evaluation Results
