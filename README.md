@@ -1,6 +1,9 @@
 
 # 🎭 Emotion Text Classification using Transformers (Built from Scratch)
 
+![Word Cloud Visualization](images/wordcloud.png)
+
+
 This project focuses on building a robust **Emotion Text Classifier** using a **Transformer architecture implemented entirely from scratch**. The goal is to classify input text into one of six emotional categories:
 
 > `sadness`, `joy`, `love`, `anger`, `fear`, and `surprise`
